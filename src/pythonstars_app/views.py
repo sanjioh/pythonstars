@@ -28,6 +28,9 @@ def home(request):
         plot_width=800,
         plot_height=300,
     )
+    plot.background_fill_color = '#FFFFFF'
+    plot.border_fill_color = '#00A7E1'
+    plot.background_fill_alpha = 0.5
 
     plot.line(x, y, line_width=2)
     script, div = components(plot)

@@ -1,14 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Python Stars</title>
+    <meta charset="utf-8">
     <link href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="{% static "pythonstars_app/styles/style.css" %}" rel="stylesheet" type="text/css">
+    <title>Python Stars</title>
   </head>
   <body>
+    <div class="title">
+      <h1>Python Stars</h1>
+      <h2>GitHub stars of cpython repository over time</h2>
+    </div>
     <div>
       {{ div | safe }}
-      <script src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>
       {{ script | safe }}
     </div>
+    <div class="twitter">
+      <p>Made with love by <a href="https://twitter.com/sanjioh">@sanjioh</a></p>
+    </div>
+    <script src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>
   </body>
 </html>

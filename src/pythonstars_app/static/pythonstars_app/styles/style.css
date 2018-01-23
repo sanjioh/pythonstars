@@ -1,0 +1,27 @@
+html {
+  background-color: #00A7E1;
+  color: #003459;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+div {
+  margin: 0 auto;
+}
+
+.title {
+  padding: 0px 0px 50px 0px;
+}
+
+.twitter {
+  padding: 50px 0px 0px 0px;
+}
