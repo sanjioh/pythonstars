@@ -1,7 +1,8 @@
 # coding: utf-8
 import datetime
-from bokeh.plotting import figure
+
 from bokeh.embed import components
+from bokeh.plotting import figure
 from django.shortcuts import render_to_response
 from django.utils import timezone
 
