@@ -126,5 +126,6 @@ STATIC_URL = '/static/'
 
 CRON_CLASSES = [
     'pythonstars_app.cronjobs.GetDataCronjob',
+    'pythonstars_app.cronjobs.AggregateCronjob',
 ]
 DJANGO_CRON_DELETE_LOGS_OLDER_THAN = 10
