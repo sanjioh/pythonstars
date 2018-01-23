@@ -9,11 +9,11 @@ from pythonstars_app.models import DataPoint
 
 
 def home(request):
-    thirty_days_ago = timezone.now() - datetime.timedelta(days=30)
+    six_months_ago = timezone.now() - datetime.timedelta(days=180)
 
     datapoints = (
         DataPoint.objects
-        .filter(recorded_at__gt=thirty_days_ago)
+        .filter(recorded_at__gt=six_months_ago)
         .only('stars', 'recorded_at')
         .order_by('recorded_at')
     )
