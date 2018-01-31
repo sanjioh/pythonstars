@@ -109,3 +109,6 @@ venv.bak/
 
 # pythonstars
 db.sqlite3
+
+# MacOS
+.DS_Store
